@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class WesternRestaurant implements Restaurant {
+	
 
 	private Chef chef;
 	
@@ -21,5 +22,8 @@ public class WesternRestaurant implements Restaurant {
 		course.combineMenu(); // 요리 코스 매뉴.  두가지가 없다면 레스토랑이 돌아가지 않는 가정.
 		chef.cook(); // 요리를 한다.
 	}
+
+	
+	
 	
 }

@@ -23,6 +23,8 @@ public class Main {
 		
 		Hotel hotel2 = ct.getBean("hotel2",Hotel.class);
 		
+		hotel2.inform();
+		
 	}
 
 }

@@ -39,7 +39,8 @@ public class Hotel {
 	
 	//setter 주입
 	@Autowired // 자동 주입
-	@Qualifier("asianChef") // 넣고싶은 bean 지목 (bean id)
+	@Qualifier("asianChef") 
+	// 넣고싶은 bean 지목 (bean id) chef가 하나라면 qualifier 안써도된다.
 	public void setHeadChef(Chef headChef) {
 		this.headChef = headChef;
 	}

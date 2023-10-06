@@ -13,8 +13,9 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	
 	<bean id = "asianRes" class = "core.chap2.AsianRestaurant" >
-		<property name="chef" ref = "asianChef"></property>
+		<property name="chef" ref = "asianChef"></property> 
 		<property name="course" ref = "sushi"></property>
+			<!-- name은 setter메서드 이름 -->
 	</bean>
 	<bean id = "sushi" class = "core.chap2.SushiCourse" />
 	<bean id = "asianChef" class = "core.chap2.AsianChef" />
@@ -25,7 +26,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id = "hotel2" class = "core.chap2.Hotel">
 		<constructor-arg ref = "western" />
 		<constructor-arg ref = "frenchChef" />
-		
+		<!-- 위(bean constructor-arg)에 ref를 밑에 (bean id)로 불러온다. -->
 	
 	</bean>
 	
